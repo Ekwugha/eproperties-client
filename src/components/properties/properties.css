@@ -1,0 +1,22 @@
+.properties-h1 {
+    color: var(--second-color, #1C3988);
+
+/* D / Dark / H2 */
+font-size: 51.88px;
+font-family: Merriweather;
+font-weight: 700;
+line-height: 69px;
+}
+
+.properties-span {
+    color: var(--second-color, #1C3988);
+
+/* D / Dark / Subheadline */
+font-size: 21.25px;
+font-family: Open Sans;
+line-height: 28.3px;
+}
+
+.l {
+    margin: 10px;
+}

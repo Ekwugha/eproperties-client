@@ -1,0 +1,16 @@
+.about-us-header {
+    color: #0B5AA9;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.about-us-p {
+    text-align: justify;
+    text-justify: inter-word;
+    color: #2C2F34;
+    font-size: 15px;
+    font-family: Segoe UI;
+    line-height: 26px;
+  }

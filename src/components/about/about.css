@@ -1,0 +1,48 @@
+.about-title {
+  font-family: Merriweather;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 69px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #091638;
+}
+
+.about-p {
+  font-family: Open Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #091638;
+  height: fit-content;
+}
+
+.countries-p {
+  font-family: Lufga;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #091638;
+}
+
+.image-text {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  color: #110229;
+  text-align: center;
+  font-size: 24px;
+  font-family: Lufga;
+  font-weight: 600;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  line-height: 31px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}

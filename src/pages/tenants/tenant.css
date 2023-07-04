@@ -1,0 +1,39 @@
+.tenant-h3 {
+  color: #000;
+  text-align: center;
+  font-size: 31px;
+  font-family: Montserrat;
+}
+
+.tenant-p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 22.857px;
+}
+
+.tenant-btn1 {
+    display: flex;
+    padding: 21px 30px;
+    border-radius: 30px;
+    background: #FF8400;
+    align-items: flex-start;
+
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 18px;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+  .h {
+    height: 100vh;
+    width: 100vw;
+  }
+}

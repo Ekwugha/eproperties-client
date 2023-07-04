@@ -1,0 +1,82 @@
+.client-header {
+  color: var(--second-color, #1c3988);
+  text-align: center;
+  font-size: 48px;
+  font-family: Playfair Display;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.96px;
+  text-transform: capitalize;
+}
+
+.client-header-p {
+  color: rgba(47, 35, 79, 0.8);
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.client-card {
+  text-align: center;
+}
+
+.client-title {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #2f234f !important;
+}
+
+.client-p {
+  color: #2f234f;
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat !important;
+  line-height: 21px;
+}
+
+.client-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid whitesmoke;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.client-name {
+  color: rgba(47, 35, 79, 0.8);
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.client-job {
+  color: rgba(47, 35, 79, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.img-slide2 {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+}

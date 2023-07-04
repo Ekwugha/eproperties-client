@@ -1,0 +1,60 @@
+.contact-box {
+  width: 352px;
+  height: 780px;
+  border-radius: 4px;
+  background: var(--light-gray, #f3f3fa);
+  flex-shrink: 0;
+}
+
+.contact-us {
+  color: var(--second-color, #1c3988);
+  font-size: 26.563px;
+  font-family: Merriweather;
+  font-weight: 700;
+  line-height: 35.329px;
+  justify-content: center;
+  height: 48px;
+}
+
+.form-text {
+  color: var(--second-color, #1c3988);
+  font-size: 17px;
+  font-family: Open Sans;
+  line-height: 27px;
+}
+
+.form-input {
+  width: 304px;
+  height: 56px;
+  flex-shrink: 0;
+  color: var(--second-color, #1c3988);
+  font-size: 17px;
+  font-family: Open Sans;
+  line-height: 27px;
+}
+
+.form-message {
+  width: 304px;
+  height: 308px;
+  flex-shrink: 0;
+}
+
+.checkbox-text {
+  color: #1c3988;
+  font-size: 17px;
+  font-family: Open Sans;
+  line-height: 27px;
+}
+
+.contact-btn {
+  width: 304px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--main-color, #2972fe);
+  text-align: center;
+  font-size: 16px;
+  font-family: Helvetica;
+  font-weight: 700;
+  line-height: 20px;
+  border: 2px solid #2972fe;
+}
