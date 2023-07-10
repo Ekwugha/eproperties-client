@@ -20,6 +20,10 @@
   font-weight: 700;
 }
 
+.property-image {
+  width: 100%;
+}
+
 /* .img-slide {
   width: 205.19px;
   height: 90.56px;

@@ -3,6 +3,7 @@ import axios from "axios";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import CustomNavbar from "../../components/navbar/navbar";
 
 
 
@@ -13,10 +14,15 @@ const Register = () => {
     email: "",
     tel: "",
     password: "",
+    image: null
   });
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  const handleFileInputChange = (event) => {
+    setFormData({ ...formData, image: event.target.files[0] });
   };
 
   const handleFormSubmit = async (event) => {
@@ -24,9 +30,19 @@ const Register = () => {
     event.preventDefault();
 
     try {
+
+      const formDataToSend = new FormData();
+      formDataToSend.append("fname", formData.fname);
+      formDataToSend.append("sname", formData.sname);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("tel", formData.tel);
+      formDataToSend.append("accountType", formData.accountType);
+      formDataToSend.append("password", formData.password);
+      formDataToSend.append("image", formData.image);
+
       const response = await axios.post(
-        "http://localhost:8800/api/auth/register",
-        formData
+        "http://localhost:8800/auth/register",
+        formDataToSend
       );
       console.log(response.data);
       // Reset the form
@@ -37,6 +53,7 @@ const Register = () => {
         tel: "",
         accountType: "",
         password: "",
+        image: null
       });
       toast.success("Registration successful! ✅"); // Display success message
     } catch (error) {
@@ -51,12 +68,14 @@ const Register = () => {
 
   return (
     <Container className="mt-5 height d-flex align-items-center justify-content-center">
+      <CustomNavbar />
       <Row className="justify-contentcenter">
         <Col md={6}>
           <form
             name="contact"
             className="py-3"
             onSubmit={handleFormSubmit}
+            encType="multipart/form-data" // Set the form's enctype to handle file upload
             noValidate
           >
             {/* First Name */}
@@ -145,6 +164,20 @@ const Register = () => {
                 required
               />
             </div>
+            {/* PROFILE IMAGE */}
+            {formData.accountType === "Seller" && (
+              <div className="mb-3">
+                <label className="font-weight-bold">
+                  Profile Image <br /> <br />
+                  <input
+                    type="file"
+                    id="myfile"
+                    name="image"
+                    onChange={handleFileInputChange}
+                  />
+                </label>
+              </div>
+            )}
             {/* Register button */}
             <button
               type="submit"

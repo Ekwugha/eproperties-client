@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import './login.css'
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 // import { AuthContext } from "../../context/authContext";
 
 
@@ -32,7 +34,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8800/api/auth/login",
+        "http://localhost:8800/auth/login",
         { email, password }
       );
       // console.log(response.data);
@@ -56,9 +58,15 @@ const Login = () => {
 
   return (
     <Container className="height d-flex align-items-center justify-content-center">
+      <CustomNavbar />
       <Row className="justify-contentcenter">
         <Col>
-          <form name="contact" className="py3" onSubmit={handleSubmit} noValidate>
+          <form
+            name="contact"
+            className="py3"
+            onSubmit={handleSubmit}
+            noValidate
+          >
             <div className="form-group py-2">
               <input
                 type="email"

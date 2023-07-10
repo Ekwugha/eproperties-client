@@ -3,10 +3,13 @@ import { Col, Container, Row } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import "./home.css";
 import PropertyTab from "../../components/propertytab";
-import Offer from "../../components/offer/offer";
+// import Offer from "../../components/offer/offer";
 import About from "../../components/about/about";
 import Client from "../../components/client/client";
 import Properties from "../../components/properties/properties";
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
+import PropertyList from "../../components/propertyList";
 
 const Home = () => {
   return (
@@ -14,6 +17,7 @@ const Home = () => {
       <br />
       <br />
       <br />
+      <CustomNavbar />
       {/* LANDINGPAGE SLIDER */}
       <Container data-aos="fade-up">
         <Row>
@@ -69,7 +73,9 @@ const Home = () => {
       </div>
 
       {/* OFFER COMPONENT */}
-      <Offer />
+      {/* <Offer /> */}
+      
+      <PropertyList />
 
       {/* PROPERTIES COMPONENT */}
       <Properties />
@@ -79,6 +85,7 @@ const Home = () => {
 
       {/* CLIENT COMPONENT */}
       <Client />
+      <Footer />
     </div>
   );
 };

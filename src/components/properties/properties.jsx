@@ -110,6 +110,10 @@ const Properties = () => {
     setCurrentPage(pageNumber);
   };
 
+  // const propertyCategory = () => {
+  //   window.location("/")
+  // }
+
 
   return (
     <div className="offer my-5">

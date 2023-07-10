@@ -1,0 +1,42 @@
+.dashboard-mt {
+    margin-top: 7em;
+}
+
+.viewheight {
+    height: 100vh;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.header-color {
+    color: rgba(255,255,255,.8);
+    /* color: #c2c7d0; */
+}
+
+.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  color: inherit;
+  padding: 0;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.font-weight-bold {
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .dashboard-dflex {
+        display: block;
+    }
+}
+
+.editor-container {
+  height: 300px;
+}

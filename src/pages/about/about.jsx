@@ -2,12 +2,15 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Contact from '../../components/contact/contact';
 import './about.css'
+import CustomNavbar from '../../components/navbar/navbar';
+import Footer from '../../components/footer/footer';
 
 const About = () => {
   return (
     <div className="mt-5 pt-5">
+      <CustomNavbar />
       <Container>
-        <Row className='mt-5'>
+        <Row className="mt-5">
           <Col md={7} lg={8}>
             <h3 className="about-us-header mt5">
               PropTech Spotlight: House Africa
@@ -51,6 +54,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

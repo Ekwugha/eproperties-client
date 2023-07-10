@@ -4,10 +4,13 @@ import "./tenant.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const Tenants = () => {
   return (
     <div>
+      <CustomNavbar />
       {/* HEADER */}
       <div
         className="img position-relative"
@@ -31,7 +34,7 @@ const Tenants = () => {
                   icon={faArrowRight}
                   size="sm"
                 />
-                 Tenants
+                Tenants
               </span>
             </Col>
           </Row>
@@ -57,6 +60,7 @@ const Tenants = () => {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 };

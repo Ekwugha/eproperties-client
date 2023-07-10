@@ -5,6 +5,8 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./estateAgent.css";
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const EstateAgent = () => {
   const navigate = useNavigate();
@@ -27,9 +29,10 @@ const EstateAgent = () => {
 
   return (
     <div className="top">
+      <CustomNavbar />
       <Container className="my-5">
         <h3 className="estate-header">Estate Agents in Nigeria</h3>
-        
+
         <Row className="justify-content-center">
           <Col className="mb-4">
             <Card>
@@ -384,6 +387,7 @@ const EstateAgent = () => {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 };

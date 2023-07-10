@@ -36,6 +36,10 @@ export default function CustomNavbar() {
     window.location = "/";
   };
 
+  const postProperty = () => {
+    window.location = "/dashboard";
+  }
+
   const handleNavLinkClick = () => {
     setExpanded(false);
     window.scrollTo(0, 0);
@@ -180,10 +184,10 @@ export default function CustomNavbar() {
 
             <Nav className="sm">
               {currentUser && currentUser.accountType === "Buyer" && (
-                <Button className="btn mx-4 sm">Request a property</Button>
+                <Button className="btn mx-4 sm" >Request a property</Button>
               )}
               {currentUser && currentUser.accountType === "Seller" && (
-                <Button className="btn mx-4 sm">Post a property</Button>
+                <Button className="btn mx-4 sm" onClick={postProperty}>Post a property</Button>
               )}
               {currentUser && (
                 <Button className="btn mx-4" onClick={handleLogout}>

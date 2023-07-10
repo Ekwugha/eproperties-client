@@ -6,10 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faGlobe, faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
 import Offer from "../../components/offer/offer";
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const Agent = () => {
   return (
     <div>
+      <CustomNavbar />
       {/* HEADER */}
       <div
         className="img position-relative"
@@ -139,11 +142,11 @@ const Agent = () => {
         <h3 className="mt-5 about-agent-h3">
           Available Property By Jaytee Properties
         </h3>
-        </Container>
-        <Offer />
+      </Container>
+      <Offer />
 
-        {/* CONTACT AGENT */}
-        <Container>
+      {/* CONTACT AGENT */}
+      <Container>
         <div className="my-5">
           <h3 className="about-agent-h3 ">Contact - Jaytee Properties</h3>
           <form
@@ -199,6 +202,7 @@ const Agent = () => {
           </form>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 };

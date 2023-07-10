@@ -1,10 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Rent from "../../components/rent/rentComponent";
+import CustomNavbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
 
 const SalePage = () => {
   return (
     <div className="space-top">
+      <CustomNavbar />
       <Container>
         <div className="rent-div1">Find properties for Sell in Nigeria</div>
         <p className="header-p1 text-center">
@@ -13,6 +16,7 @@ const SalePage = () => {
       </Container>
       {/* RENT COMPONENT */}
       <Rent />
+      <Footer />
     </div>
   );
 };

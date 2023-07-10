@@ -28,15 +28,15 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <div className="App">
-          <CustomNavbar />
-          <GoTop />
+          {/* <CustomNavbar /> */}
+          {/* <GoTop /> */}
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/rent" element={<RentPage />} />
             <Route exact path="/sale" element={<SalePage />} />
             <Route exact path="/short-let" element={<LetPage />} />
             <Route exact path="/tenants" element={<Tenants />} />
-            <Route exact path="/propertydetails" element={<PropertyDetail />} />
+            <Route exact path="/property/:id" element={<PropertyDetail />}/>
             <Route exact path="/estate-agents" element={<EstateAgent />} />
             <Route exact path="/agent" element={<Agent />} />
             <Route exact path="/about" element={<About />} />
@@ -45,7 +45,7 @@ function App() {
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
           <ToastContainer position="top-right" />
         </div>
       </BrowserRouter>
